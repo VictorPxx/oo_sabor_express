@@ -12,5 +12,3 @@ restaurante_pizza.nome = 'Tarantella'
 restaurante_pizza.categoria = 'Pizzaria'
 
 restaurantes = [restaurante_praca, restaurante_pizza]
-
-print(vars(restaurante_pizza))
