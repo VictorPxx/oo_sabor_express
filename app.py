@@ -1,9 +1,10 @@
 from modelos.restaurante import Restaurante
 
 restaurante_1 = Restaurante(nome='Soares Lanches', categoria='Hamburgueria')
-restaurante_2 = Restaurante(nome='WR', categoria='Pizzaria')
 
-restaurante_1.alternar_estado()
+restaurante_1.receber_avaliacao('Victor', 8)
+restaurante_1.receber_avaliacao('Flávia', 6)
+restaurante_1.receber_avaliacao('Lavínia', 10)
 
 def main():
     Restaurante.listar_restaurantes()
