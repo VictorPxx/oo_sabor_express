@@ -1,13 +1,16 @@
 from modelos.restaurante import Restaurante
+from modelos.cardapio.bebida import Bebida
+from modelos.cardapio.prato import Prato
 
-restaurante_1 = Restaurante(nome='Soares Lanches', categoria='Hamburgueria')
+restaurante_soares = Restaurante(nome='Soares Lanches', categoria='Hamburgueria')
+cachorro_quente = Prato('Cachorro Quente', 6.0, 'O mais tradicional')
+suco_graviola = Bebida('Suco de Graviola', 4.0, 'grande')
 
-restaurante_1.receber_avaliacao('Victor', 8)
-restaurante_1.receber_avaliacao('Flávia', 6)
-restaurante_1.receber_avaliacao('Lavínia', 10)
+restaurante_soares.adicionar_item_no_cardapio(cachorro_quente)
+restaurante_soares.adicionar_item_no_cardapio(suco_graviola)
 
 def main():
-    Restaurante.listar_restaurantes()
+    restaurante_soares.exibir_cardapio
 
 if __name__ == '__main__':
     main()
